@@ -12,6 +12,12 @@ html(lang="ru")
         link(rel="stylesheet" href="css/style.min.css")
     body.page
         //- include ../tmp/grid
+        // Page body
+        .page__body
+            // Header
+            include header/header
+        // Sidebar
+        include sidebar/sidebar
         block content
         block script
             script(src="js/scripts.min.js")
