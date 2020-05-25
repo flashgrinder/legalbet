@@ -1,20 +1,32 @@
 @font-face {
-	font-family: 'Roboto';
-	src: url('../fonts/Roboto/Roboto-Regular.eot');
-	src: url('../fonts/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
-	url('../fonts/Roboto/Roboto-Regular.woff') format('woff'),
-	url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
-	font-weight: 400;
+	font-family: 'ProximaNova Bl';
+	src: url('../fonts/ProximaNova/ProximaNova-Bold.eot');
+	src: local('Proxima Nova Bold'), local('../fonts/ProximaNova/ProximaNova-Bold'),
+		url('../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype');
+	font-weight: bold;
 	font-style: normal;
 }
+
 @font-face {
-	font-family: 'Roboto';
-	src: url('../fonts/Roboto/Roboto-Bold.eot');
-	src: url('../fonts/Roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/Roboto/Roboto-Bold.woff2') format('woff2'),
-	url('../fonts/Roboto/Roboto-Bold.woff') format('woff'),
-	url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
-	font-weight: 700;
+	font-family: 'ProximaNova Rg';
+	src: url('../fonts/ProximaNova/ProximaNova-Regular.eot');
+	src: local('Proxima Nova Regular'), local('../fonts/ProximaNova/ProximaNova-Regular'),
+		url('../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNova Lt';
+	src: url('../fonts/ProximaNova/ProximaNova-Light.eot');
+	src: local('Proxima Nova Light'), local('../fonts/ProximaNova/ProximaNova-Light'),
+		url('../fonts/ProximaNova/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Light.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Light.ttf') format('truetype');
+	font-weight: 300;
 	font-style: normal;
 }

@@ -1,10 +1,14 @@
+/* Variables */
 @import "./base/variables";
 @import "./base/smart-grid";
+/* Fonts */
 @import "./base/font";
+/* Base */
 @import "./base/base";
+/* Base Classes */
+@import "./base/classes";
 /* Blocks */
 @import "./blocks/header/header";
 
+/* Footer */
 @import "./blocks/footer/footer";
-/* Themes */
-@import "./themes/dark";

@@ -1,0 +1,152 @@
+/* Variables */
+
+:root {
+  --color-blue: #3498DB;
+  --color-yellow: #FFC504;
+  --color-red: #D0021B;
+  --color-alert: #F64747;
+  --color-gray: #F64747;
+  --color-white: #FFFFFF;
+  --color-green: #62B435;
+  --color-black: rgba(0, 0, 0, 0.8);
+  --color-dark: #333333;
+  --font-Proxima-Bl: 'ProximaNova Bl', sans-serif;
+  --font-Proxima-Rg: 'ProximaNova Rg', sans-serif;
+  --font-Proxima-Lt: 'ProximaNova Lt', sans-serif;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: 'ProximaNova Bl';
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.eot");
+  src: local("Proxima Nova Bold"), local("../fonts/ProximaNova/ProximaNova-Bold"), url("../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova Rg';
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("../fonts/ProximaNova/ProximaNova-Regular"), url("../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova Lt';
+  src: url("../fonts/ProximaNova/ProximaNova-Light.eot");
+  src: local("Proxima Nova Light"), local("../fonts/ProximaNova/ProximaNova-Light"), url("../fonts/ProximaNova/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Base */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Base Classes */
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container-full {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.debug {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
+
+.debug > div {
+  height: inherit;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.debug > div > div {
+  height: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.debug > div > div > div {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(8.33333% - 30px);
+  width: calc(8.33333% - 30px);
+  height: inherit;
+  outline: 1px solid #138a5c;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Blocks */
+
+.header {
+  padding: 30px 0 0 0;
+}
+
+/* Footer */
+
+@media screen and (max-width: 400px) {
+  .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .container-full {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .debug > div {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .debug > div > div {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .debug > div > div > div {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .debug > div > div > div {
+    width: -webkit-calc(8.33333% - 10px);
+    width: calc(8.33333% - 10px);
+  }
+}
