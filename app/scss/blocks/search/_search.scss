@@ -1,0 +1,13 @@
+.search {
+    font-family: var(--font-Proxima-Bl);
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-dark-gray);
+    text-align-last: left;
+    &__title {
+        margin-left: 8px;
+    }
+}

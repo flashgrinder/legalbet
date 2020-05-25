@@ -1,0 +1,24 @@
+.help {
+    font-family: var(--font-Proxima-Bl);
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-dark-gray);
+    text-align-last: left;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        right: -10px;
+        top: -4px;
+        border-radius: 50%;
+        background: var(--color-green);
+    }
+    &__title {
+        margin-left: 8px;
+    }
+}

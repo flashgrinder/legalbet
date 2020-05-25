@@ -8,7 +8,21 @@
 /* Base Classes */
 @import "./base/classes";
 /* Blocks */
+/* Page */
+@import "./blocks/page/page";
+/* Sidebar */
+@import "./blocks/sidebar/sidebar";
+/* Header */
 @import "./blocks/header/header";
-
+/* Logo */
+@import "./blocks/logo/logo";
+/* Menu */
+@import "./blocks/menu/menu";
+/* Help */
+@import "./blocks/help/help";
+/* Search */
+@import "./blocks/search/search";
+/* Avatar */
+@import "./blocks/avatar/avatar";
 /* Footer */
 @import "./blocks/footer/footer";

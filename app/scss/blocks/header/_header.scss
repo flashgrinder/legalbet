@@ -1,3 +1,18 @@
 .header {
-    padding: 30px 0 0 0;
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: var(--color-light-gray);
+    &__menu {
+        margin-left: 24px;
+    }
+    &__help {
+        margin-left: 27px;
+    }
+    &__search {
+        margin-left: 20px;
+    }
+    &__avatar {
+        margin-left: 32px;
+    }
 }

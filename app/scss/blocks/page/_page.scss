@@ -1,0 +1,13 @@
+.page {
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    &__body {
+        width: 80%;
+        background-color: var(--color-white-gray);
+    }
+    &__sidebar {
+        width: 20%;
+    }
+}
