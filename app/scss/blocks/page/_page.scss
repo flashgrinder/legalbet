@@ -10,4 +10,15 @@
     &__sidebar {
         width: 20%;
     }
+    &__holder {
+        display: flex;
+        margin: 0 24px;
+    }
+    &__content {
+        flex-basis: 75%;
+    }
+    &__sidebar-widgets {
+        margin-left: 25px;
+        flex-basis: 25%;
+    }
 }

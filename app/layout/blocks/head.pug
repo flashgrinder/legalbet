@@ -16,9 +16,12 @@ html(lang="ru")
         .page__body
             // Header
             include header/header
+            // Content
+            .page__holder
+                block content
         // Sidebar
         include sidebar/sidebar
-        block content
+        //- block content
         block script
             script(src="js/scripts.min.js")
         include footer/footer
