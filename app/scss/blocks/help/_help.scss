@@ -8,6 +8,9 @@
     color: var(--color-dark-gray);
     text-align-last: left;
     position: relative;
+    @include sm-block {
+        display: none;
+    }
     &::before {
         content: '';
         position: absolute;

@@ -27,6 +27,11 @@
             flex-basis: 100%;
         }
     }
+    &__table-rates {
+        @include sm-block {
+            margin-top: 16px;
+        }
+    }
     &__sidebar-widgets {
         margin-left: 25px;
         flex-basis: 25%;

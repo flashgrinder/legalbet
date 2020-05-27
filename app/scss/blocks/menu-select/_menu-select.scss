@@ -1,0 +1,30 @@
+.menu-select {
+    position: relative;
+    display: none;
+    @include sm-block {
+        display: block;
+    }
+    &__label {
+        pointer-events: none;
+    }
+    &__control {
+        font-family: var(--font-Proxima-Bl);
+        font-size: 12px;
+        line-height: 16px;
+        width: 100%;
+        background-color: var(--color-white);
+        padding: 16px;
+        appearance: none;
+        border-radius: 3px;
+    }
+    &__arrow {
+        position: absolute;
+        width: 40px;
+        height: 30px;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        background: url('../img/icons/arrow-down.svg') no-repeat center;
+        box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.1);
+    }
+}

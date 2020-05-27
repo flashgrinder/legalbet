@@ -225,6 +225,25 @@ img {
   width: 100%;
 }
 
+.logo__img_mobile {
+  display: none;
+}
+
+/* Knowledge-base */
+
+.knowledge-base {
+  display: none;
+}
+
+.knowledge-base__link {
+  font-family: var(--font-Proxima-Bl);
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-black);
+}
+
 /* Menu */
 
 .menu {
@@ -311,6 +330,12 @@ img {
   margin-left: 8px;
 }
 
+/* Burger-menu */
+
+.burger-menu {
+  display: none;
+}
+
 /* Avatar */
 
 .avatar {
@@ -361,6 +386,42 @@ img {
 
 /* Content */
 
+/* Menu-select */
+
+.menu-select {
+  position: relative;
+  display: none;
+}
+
+.menu-select__label {
+  pointer-events: none;
+}
+
+.menu-select__control {
+  font-family: var(--font-Proxima-Bl);
+  font-size: 12px;
+  line-height: 16px;
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 3px;
+}
+
+.menu-select__arrow {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  top: 50%;
+  right: 5px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url("../img/icons/arrow-down.svg") no-repeat center;
+  box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
 /* Table-rates */
 
 .table-rates {
@@ -368,6 +429,7 @@ img {
   max-width: 100%;
   background-color: var(--color-white);
   padding: 34px 25px 15px;
+  border-radius: 3px;
   overflow: hidden;
 }
 
@@ -653,6 +715,55 @@ img {
 
   .page__holder {
     margin: 0 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .page__table-rates {
+    margin-top: 16px;
+  }
+
+  .header {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    padding: 16px 12px;
+  }
+
+  .logo__img_desctop {
+    display: none;
+  }
+
+  .logo__img_mobile {
+    display: block;
+  }
+
+  .knowledge-base {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .help {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .avatar {
+    display: none;
+  }
+
+  .menu-select {
+    display: block;
   }
 }
 

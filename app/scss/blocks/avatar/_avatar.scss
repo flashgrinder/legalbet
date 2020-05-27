@@ -1,5 +1,8 @@
 .avatar {
     position: relative;
+    @include sm-block {
+        display: none;
+    }
     &::before {
         content: '';
         position: absolute;

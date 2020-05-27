@@ -1,0 +1,21 @@
+aside.sidebar-widgets.page__sidebar-widgets
+    .widget-menu.sidebar-widgets__widget-menu
+        ul.widget-menu__list
+            each val, index in menuWidgetLink
+                li.widget-menu__item
+                    a(href="#").widget-menu__link= val
+    .widget-form.sidebar-widgets__widget-form
+        .widget-form__header
+            h3.widget-form__title Курс молодого ставочника
+                span.widget-form__icon
+                    include ../svg/widget-form-book
+        p.widget-form__descr Помогаем разобраться со ставками и букмекерскими конторами
+        a(href="#").widget-form__more Подробности
+        form.widget-form__holder
+            input(type="text", name="" placeholder="Ваше имя").widget-form__input
+            input(type="email", name="" placeholder="Email").widget-form__input
+            a(href="#").widget-form__btn.button.button_blue Подписаться на курс
+            label(for="check").widget-form__agree
+                input(type="checkbox", name="" id="check").widget-form__check
+                span.widget-form__text Согласен
+                a(href="#").widget-form__text.widget-form__text_link c условиями

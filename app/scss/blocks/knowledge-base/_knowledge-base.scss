@@ -1,0 +1,14 @@
+.knowledge-base {
+    display: none;
+    @include sm-block {
+        display: block;
+    }
+    &__link {
+        font-family: var(--font-Proxima-Bl);
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration: none;
+        text-align: center;
+        color: var(--color-black);
+    }
+}

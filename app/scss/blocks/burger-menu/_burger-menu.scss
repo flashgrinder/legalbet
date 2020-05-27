@@ -1,0 +1,4 @@
+.burger-menu {
+    display: none;
+    @include sm(display, block)
+}

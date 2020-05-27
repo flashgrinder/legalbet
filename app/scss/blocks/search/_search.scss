@@ -7,6 +7,9 @@
     text-decoration: none;
     color: var(--color-dark-gray);
     text-align-last: left;
+    @include sm-block {
+        display: none;
+    }
     &__title {
         margin-left: 8px;
     }

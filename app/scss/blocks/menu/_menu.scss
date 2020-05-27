@@ -2,6 +2,9 @@
     font-family: var(--font-Proxima-Bl);
     font-size: 14px;
     line-height: 16px;
+    @include sm-block {
+        display: none;
+    }
     &__list {
         display: flex;
         list-style: none;
