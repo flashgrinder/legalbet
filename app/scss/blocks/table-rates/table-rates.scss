@@ -1,18 +1,19 @@
 .table-rates {
-    width: 100%;
-    max-width: 100%;
     background-color: var(--color-white);
+    overflow: hidden;
     padding: 34px 25px 15px;
     border-radius: 3px;
-    overflow: hidden;
     @include xs(padding, 20px 16px 15px);
     &__caption {
         position: relative;
         background-color: var(--color-white);
-        padding: 34px 26px 0 26px;
-        @include xs-block {
-            padding: 20px 16px 0 16px;
-        }
+        margin-bottom: 26px;
+    }
+    &__body {
+        width: 100%;
+        max-width: 100%;
+        background-color: var(--color-white);
+        border-radius: 3px;
     }
     &__title {
         display: block;
@@ -29,8 +30,8 @@
     }
     &__jaw {
         position: absolute;
-        top: 3px;
-        right: -40px;
+        top: -30px;
+        right: -65px;
         display: inline-block;
         font-family: var(--font-Proxima-Bl);
         font-size: 12px;
@@ -44,13 +45,15 @@
         @include xs-block {
             font-size: 10px;
             line-height: 12px;
+            top: -20px;
+            right: -55px;
         }
     }
     &__img {
         object-fit: contain;
     }
     &__plunk {
-        display: inline-block;
+        display: inline-flex;
         background-color: var(--color-white-gray);
         padding: 8px 18px;
         border-radius: 43px;
@@ -72,7 +75,10 @@
     }
     &__burger {
         margin-left: 8px;
-        @include xs(margin-left, 4px)
+        @include xs-block {
+            margin-left: 4px;
+            padding-top: 4px;
+        }
     }
     &__num {
         color: var(--color-black);
@@ -138,7 +144,7 @@
                     top: 50%;
                     transform: translateY(-50%);
                     cursor: pointer;
-                    @include xs(right, -10px)
+                    @include xs(right, -15px)
                 }
             }
             

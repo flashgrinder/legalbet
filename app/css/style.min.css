@@ -408,6 +408,7 @@ img {
      -moz-appearance: none;
           appearance: none;
   border-radius: 3px;
+  border: none;
 }
 
 .menu-select__arrow {
@@ -425,18 +426,23 @@ img {
 /* Table-rates */
 
 .table-rates {
-  width: 100%;
-  max-width: 100%;
   background-color: var(--color-white);
+  overflow: hidden;
   padding: 34px 25px 15px;
   border-radius: 3px;
-  overflow: hidden;
 }
 
 .table-rates__caption {
   position: relative;
   background-color: var(--color-white);
-  padding: 34px 26px 0 26px;
+  margin-bottom: 26px;
+}
+
+.table-rates__body {
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--color-white);
+  border-radius: 3px;
 }
 
 .table-rates__title {
@@ -451,8 +457,8 @@ img {
 
 .table-rates__jaw {
   position: absolute;
-  top: 3px;
-  right: -40px;
+  top: -30px;
+  right: -65px;
   display: inline-block;
   font-family: var(--font-Proxima-Bl);
   font-size: 12px;
@@ -472,7 +478,9 @@ img {
 }
 
 .table-rates__plunk {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
   background-color: var(--color-white-gray);
   padding: 8px 18px;
   border-radius: 43px;
@@ -820,10 +828,6 @@ img {
     padding: 20px 16px 15px;
   }
 
-  .table-rates__caption {
-    padding: 20px 16px 0 16px;
-  }
-
   .table-rates__title {
     font-size: 18px;
     line-height: 24px;
@@ -832,6 +836,8 @@ img {
   .table-rates__jaw {
     font-size: 10px;
     line-height: 12px;
+    top: -20px;
+    right: -55px;
   }
 
   .table-rates__plunk {
@@ -841,6 +847,7 @@ img {
 
   .table-rates__burger {
     margin-left: 4px;
+    padding-top: 4px;
   }
 
   .table-rates__cell {
@@ -878,7 +885,7 @@ img {
   }
 
   .table-rates__cell_body:last-child::before {
-    right: -10px;
+    right: -15px;
   }
 
   .sidebar-widgets {
