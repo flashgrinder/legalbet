@@ -2,9 +2,6 @@
     background-color: var(--color-white);
     border-radius: 3px;
     padding: 24px;
-    &__header {
-        
-    }
     &__title {
         display: flex;
         align-items: center;
@@ -58,6 +55,7 @@
     }
     &__agree {
         display: flex;
+        justify-content: center;
         align-items: center;
         margin-top: 18px;
         font-family: var(--font-Proxima-Rg);

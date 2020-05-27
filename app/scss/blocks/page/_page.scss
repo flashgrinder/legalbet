@@ -3,22 +3,36 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
     &__body {
-        width: 80%;
+        flex-basis: 80%;
         background-color: var(--color-white-gray);
+        @include xl(flex-basis, 100%);
     }
     &__sidebar {
-        width: 20%;
+        flex-basis: 20%;
+        @include xl(display, none);
     }
     &__holder {
         display: flex;
         margin: 0 24px;
+        @include xl(margin, 0 12px);
+        @include xs-block {
+            flex-direction: column;
+        }
     }
     &__content {
         flex-basis: 75%;
+        @include xs-block {
+            flex-basis: 100%;
+        }
     }
     &__sidebar-widgets {
         margin-left: 25px;
         flex-basis: 25%;
+        @include xs-block {
+            flex-basis: 100%;
+            margin-left: 0;
+        }
     }
 }

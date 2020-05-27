@@ -1,7 +1,12 @@
 .sidebar-widgets {
-    &__widget-menu {
-        margin-bottom: 22px;
+    @include xs-block {
+        margin-top: 16px;
     }
     &__widget-form {
+        margin-top: 22px;
+        margin-bottom: 16px;
+        @include xs-block {
+            margin-top: 16px;
+        }
     }
 }

@@ -4,10 +4,14 @@
     background-color: var(--color-white);
     padding: 34px 25px 15px;
     overflow: hidden;
+    @include xs(padding, 20px 16px 15px);
     &__caption {
         position: relative;
         background-color: var(--color-white);
         padding: 34px 26px 0 26px;
+        @include xs-block {
+            padding: 20px 16px 0 16px;
+        }
     }
     &__title {
         display: block;
@@ -17,6 +21,10 @@
         color: var(--color-black);
         margin: 0;
         text-align: left;
+        @include xs-block {
+            font-size: 18px;
+            line-height: 24px;
+        }
     }
     &__jaw {
         position: absolute;
@@ -32,6 +40,10 @@
         padding: 5px 40px;
         color: var(--color-white-green);
         transform: rotate(30deg);
+        @include xs-block {
+            font-size: 10px;
+            line-height: 12px;
+        }
     }
     &__img {
         object-fit: contain;
@@ -43,6 +55,10 @@
         border-radius: 43px;
         vertical-align: middle;
         text-decoration: none;
+        @include xs-block {
+            padding: 8px;
+            border-radius: 3px;
+        }
         &_yellow {
             background-color: var(--color-yellow);
         }
@@ -55,6 +71,7 @@
     }
     &__burger {
         margin-left: 8px;
+        @include xs(margin-left, 4px)
     }
     &__num {
         color: var(--color-black);
@@ -75,16 +92,42 @@
         width: 18%;
         vertical-align: middle;
         text-align: left;
+        @include xs-block {
+            text-align: center;
+        }
         &:first-child {
             width: 30%;
+            @include xs-block {
+                width: 20%;
+            }
         }
         &_header {
             padding-top: 8px;
             padding-bottom: 8px;
+            @include xs-block {
+                display: none;
+            }
+            @include xs-block {
+                width: 100%;
+                text-align: left;
+                &:nth-child(2) {
+                    display: block;
+                }
+            }
         }
         &_body {
             padding-top: 20px;
             padding-bottom: 20px;
+            @include xs-block {
+                padding-top: 16px;
+                padding-bottom: 16px;
+                &:nth-child(4){
+                    display: none;
+                }
+                &:nth-child(3){
+                    display: none;
+                }
+            }
             &:last-child {
                 position: relative;
                 &::before {
@@ -94,6 +137,7 @@
                     top: 50%;
                     transform: translateY(-50%);
                     cursor: pointer;
+                    @include xs(right, -10px)
                 }
             }
             
